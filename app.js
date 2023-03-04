@@ -38,3 +38,34 @@ console.log(JSON.parse(data));
 }).on('error', (err) => {
 console.log("Error: " + err.message);
 });
+
+async function myFunction() {
+    try {
+    const result = await myPromise;
+    console.log(result);
+    } catch (error) {
+    console.log(error);
+    }
+    }
+    myFunction();async function myFunction() {
+        try {
+        const result = await myPromise;
+        console.log(result);
+        } catch (error) {
+        console.log(error);
+        }
+        }
+        myFunction();
+
+        const myPromise = new Promise((resolve, reject) => {
+            if (condition) {
+            resolve('Success!');
+            } else {
+            reject('Failure!');
+            }
+            });
+            myPromise.then((result) => {
+            console.log(result);
+            }).catch((error) => {
+            console.log(error);
+            });
